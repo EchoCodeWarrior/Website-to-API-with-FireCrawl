@@ -1,0 +1,6 @@
+streamlit
+firecrawl-py
+python-dotenv
+pandas
+pydantic
+tabulate
