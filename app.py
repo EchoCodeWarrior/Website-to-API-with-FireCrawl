@@ -11,7 +11,7 @@ from pydantic import BaseModel, Field
 import inspect
 
 load_dotenv()
-firecrawl_api_key = os.getenv("FIRECRAWL_API_KEY")
+firecrawl_api_key = os.getenv("fc-89ad521412b44529906a2bd4d2fa54d7")
 
 @st.cache_resource
 def load_app():
