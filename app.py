@@ -10,7 +10,6 @@ import base64
 from pydantic import BaseModel, Field
 import inspect
 
-
 load_dotenv()
 firecrawl_api_key = os.getenv("FIRECRAWL_API_KEY")
 
@@ -85,11 +84,7 @@ def stream_text(text: str, delay: float = 0.001) -> None:
     return placeholder
 
 # Main app layout
-st.markdown("""
-    # Convert ANY website into an API using <img src="data:image/png;base64,{}" width="250" style="vertical-align: -25px;">
-""".format(base64.b64encode(open("assets/firecrawl.png", "rb").read()).decode()), unsafe_allow_html=True)
-
-
+st.title("Convert ANY website into an API using Firecrawl")
 
 # Sidebar
 with st.sidebar:
